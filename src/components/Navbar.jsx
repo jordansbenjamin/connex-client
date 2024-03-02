@@ -5,11 +5,6 @@ import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Navba
 export default function LeftNavbar() {
   const menuItems = [
     "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
     "My Settings",
     "Team Settings",
     "Help & Feedback",
@@ -35,16 +30,6 @@ export default function LeftNavbar() {
         <NavbarItem>
           <Link color="foreground" href="#">
             Features
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page" color="warning">
-            Customers
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
           </Link>
         </NavbarItem>
       </NavbarContent>

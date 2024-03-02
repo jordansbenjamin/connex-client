@@ -3,10 +3,9 @@ import {Button, Input} from "@nextui-org/react";
 
 function InputField() {
   return (
-    <div className='absolute inset-x-0 bottom-0 flex flex-col items-center'>
-        <Input type="text" label="Text" />
-        <Button>Generate</Button>
-        
+    <div className='flex flex-col space-y-2 absolute bottom-0 items-center flex-1 inset-x-0'>
+         <Input type="text" label="Text" />
+         <Button>Generate</Button>
     </div>
   )
 }
