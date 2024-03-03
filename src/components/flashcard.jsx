@@ -3,7 +3,7 @@
 import React from 'react'
 import {Card, CardHeader, CardBody, CardFooter, Divider, Link, Image, Button, useDisclosure} from "@nextui-org/react";
 import EditCardModal from './EditCardModal'
-import { useData } from '../app/context/cardContext';
+
 
 
 function Flashcard({id, title, content}) {

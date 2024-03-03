@@ -1,10 +1,11 @@
-'use client'
+
 
 import React, {useState, useEffect} from 'react'
 import {Button, Input} from "@nextui-org/react";
+import { useRouter } from 'next/navigation'
 
 function InputField() {
-  const {saveData} = useData()
+  const router = useRouter()
 
   const [content, setContent] = useState()
   
@@ -36,7 +37,9 @@ function InputField() {
         // Use the data from the response
         console.log("data:::", data);
         localStorage.setItem("content", "data");
-        
+        router.refresh();
+        router.push('/flashcard');
+
       })
       .catch(error => {
         // Handle any errors that occurred during the fetch

@@ -1,4 +1,3 @@
-import {DataContextProvider} from "./context/cardContext"
 import {Providers} from './providers/providers';
 import {Inter} from 'next/font/google';
 import './globals.css';
@@ -15,14 +14,10 @@ export default function RootLayout({children}) {
   return (
     <html lang="en" className="dark">
       <body>
-        <DataContextProvider>
-          <Providers>
-
-       
-            <LeftNavbar />
-            {children}
-          </Providers>
-        </DataContextProvider>
+      <Providers>
+        <LeftNavbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );
