@@ -1,6 +1,6 @@
 import React from "react";
 import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
-// import {ConnexLogo} from "./ConnexLogo.jsx";
+
 
 export default function LeftNavbar() {
   const menuItems = [

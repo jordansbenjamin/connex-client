@@ -1,17 +1,10 @@
 'use client'
 
-import {DndContext} from '@dnd-kit/core';
-
-
-import StartButton from "@/components/StartButton";
-import InputField from "@/components/InputField";
-
+// import InputField from 
 export default function Home() {
   return (
     <main>
-        <DndContext>
-          <InputField />
-        </DndContext>
+      {/* <InputField /> */}
     </main>
   );
 }

@@ -2,6 +2,7 @@
   "name": "connex-client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://ec2-52-62-214-60.ap-southeast-2.compute.amazonaws.com",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,6 +18,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/node": "20.11.24",
+    "@types/react": "18.2.61",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.1",
