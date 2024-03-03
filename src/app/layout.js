@@ -17,12 +17,7 @@ export default function RootLayout({children}) {
         <Providers>
        
           <LeftNavbar />
-                {/* flashcard container */}
-                <div>
-
-                </div>
-                {children}
-
+          {children}
         </Providers>
       </body>
     </html>

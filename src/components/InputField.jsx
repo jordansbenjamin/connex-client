@@ -10,7 +10,7 @@ function InputField() {
 
   }
   return (
-    <div className='flex flex-col space-y-2 absolute bottom-1 items-center flex-1 inset-x-0'>
+    <div className='flex flex-col space-y-2 items-center flex-1'>
          <Input type="text" label="Text" />
          <Button onClick={handleClick}>Generate</Button>
     </div>
