@@ -25,11 +25,19 @@ export default function LeftNavbar() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
-          <p className="font-bold text-inherit">Connex</p>
+          <Link  color="foreground" href="/">
+            <p className="font-bold text-inherit">Connex</p>
+          </Link>
         </NavbarBrand>
         <NavbarItem>
           <Link color="foreground" href="#">
             Features
+          </Link>
+        </NavbarItem>
+
+        <NavbarItem>
+          <Link color="foreground" href="/settings">
+            Settings
           </Link>
         </NavbarItem>
       </NavbarContent>
