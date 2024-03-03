@@ -1,5 +1,3 @@
-
-
 import React, {useState, useEffect} from 'react'
 import {Button, Input} from "@nextui-org/react";
 import { useRouter } from 'next/navigation'
@@ -69,7 +67,7 @@ function InputField() {
          <Input type="text" onChange={handleChange} value={content}/>
          <Button onClick={handleClick}>Generate</Button>
     </div>
-  )
+  );
 }
 
-export default InputField
+export default InputField;
