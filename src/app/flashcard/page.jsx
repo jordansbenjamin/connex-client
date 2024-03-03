@@ -1,6 +1,6 @@
 import React from 'react'
-import Assembly from '@/components/flashcard/assemblyFlashcard'
-import Flashcard from '@/components/flashcard'
+// import Flashcard from '@/components/flashcard'
+import Flashcard from '../../components/flashcard'
 
 
 function page() {
