@@ -4,6 +4,7 @@ import React, {useState, useEffect} from 'react'
 import {Button, Input} from "@nextui-org/react";
 
 function InputField() {
+  const {saveData} = useData()
 
   const [content, setContent] = useState()
   
@@ -11,7 +12,7 @@ function InputField() {
 
   const data = {
   "token":"e3SH7aEDCBxdHFgatoK1",
-  "message":"Based on this given user input, generate a series of a question and 3 dotpoints as answers which we can use as a flashcard",
+  "message":content
   }
   
   const handleClick = () => {
@@ -33,7 +34,9 @@ function InputField() {
       })
       .then(data => {
         // Use the data from the response
-        console.log(data);
+        console.log("data:::", data);
+        localStorage.setItem("content", "data");
+        
       })
       .catch(error => {
         // Handle any errors that occurred during the fetch
