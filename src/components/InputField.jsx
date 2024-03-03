@@ -36,7 +36,16 @@ function InputField() {
       .then(data => {
         // Use the data from the response
         console.log("data:::", data);
-        localStorage.setItem("content", "data");
+        let response_raw = localStorage.getItem('ai_response');
+      if (response_raw !== null) {
+        let ai_response = JSON.parse(response_raw);
+        ai_response.push(data);
+        localStorage.setItem('ai_response', JSON.stringify(ai_response));
+        console.log(ai_response);
+      } else {
+        let ai_response = [data];
+        localStorage.setItem('ai_response', JSON.stringify(ai_response));
+      }
         router.refresh();
         router.push('/flashcard');
 

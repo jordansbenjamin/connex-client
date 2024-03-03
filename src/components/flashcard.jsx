@@ -13,13 +13,13 @@ function Flashcard({id, title, content}) {
       <Card className="max-w-[340px]">
         <CardHeader className="justify-between">
           <div className="flex gap-5">
-            title:{title}
+            {title}
           </div>
           <EditCardModal />
 
         </CardHeader>
         <CardBody className="px-3 py-0 text-small text-default-400">
-          content: {content}
+          {content}
         </CardBody>
         <CardFooter className="gap-3">
          
