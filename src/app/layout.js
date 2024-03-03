@@ -1,7 +1,7 @@
 import {Providers} from './providers/providers';
 import {Inter} from 'next/font/google';
 import './globals.css';
-import LeftNavbar from '@/components/Navbar';
+import LeftNavbar from '../components/Navbar';
 
 const inter = Inter({subsets: ['latin']});
 
@@ -14,15 +14,9 @@ export default function RootLayout({children}) {
   return (
     <html lang="en" className="dark">
       <body>
-        <Providers>
-       
-          <LeftNavbar />
-                  {/* flashcard container */}
-                <div>
-
-                </div>
-                {children}
-
+      <Providers>
+        <LeftNavbar />
+          {children}
         </Providers>
       </body>
     </html>
